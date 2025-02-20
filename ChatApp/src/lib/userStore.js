@@ -13,7 +13,6 @@ export const useUserStore = create((set) => ({
 			if (docRef.exists()) {
 				set({ currentUser: docRef.data(), isLoading: false });
 			} else {
-				console.log("No such document!");
 				set({ currentUser: null, isLoading: false });
 			}
 		} catch (error) {

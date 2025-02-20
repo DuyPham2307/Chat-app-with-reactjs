@@ -40,7 +40,6 @@ const Login = () => {
 		} finally {
 			setLoading(false);
 		}
-
 	};
 
 	const handleSignup = async (e) => {
@@ -64,7 +63,7 @@ const Login = () => {
 			});
 
 			await setDoc(doc(db, "userChats", res.user.uid), {
-				chat: [],
+				chats: [],
 			});
 
 			toast.success("Signup successfully");

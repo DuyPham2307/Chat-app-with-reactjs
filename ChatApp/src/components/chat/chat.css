@@ -161,6 +161,11 @@
 			border: none;
 			border-radius: 5px;
 			cursor: pointer;
+
+			&:disabled{
+				background-color: #6b84c4;
+				cursor: not-allowed;
+			}
 		}
 	}
 }
